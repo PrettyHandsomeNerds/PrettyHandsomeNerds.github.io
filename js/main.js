@@ -7,7 +7,7 @@ $('#scramble').on( "click", function() {
 		$('#secondScram').fadeIn(1000);
 	});
 
-	urlHash = encodeURI(string);
+	var urlHash = encodeURI(string);
 	window.ph_string = urlHash;
 	window.location.hash = urlHash;	
 });
@@ -25,7 +25,7 @@ $(document).on('click', '#share-button', function() {
         name: 'Pretty Handsome Scramble',
         caption: '',
         description: 'In the world of Pretty Handsome Nerds things are often upside down, but always make sense. That is why we created a Pretty Handsome Scramble - an ultimate tool for future communication that‚ we hope, will become a language one day. A Pretty Handsome Language, that is.',
-        link: 'http://prettyhandsomenerds.github.io' + window.ph_string,
+        link: 'http://prettyhandsomenerds.github.io#' + window.ph_string,
         picture: 'http://prettyhandsomenerds.github.io/img/book.png'
     } 
     fbShare(shareData);
