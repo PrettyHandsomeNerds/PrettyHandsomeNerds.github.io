@@ -1,0 +1,401 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+* {margin:0;padding:0;} 
+
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../font/BebasNeue.eot'); /* IE9 Compat Modes */
+  src: url('../font/BebasNeue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/BebasNeue.woff') format('woff'), /* Modern Browsers */
+       url('../font/BebasNeue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../font/BebasNeue.svg#971508b09718b6144e128af2335b709c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
+html, body {
+    height: 100%;
+    font-family: 'BebasNeue';
+}
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+header,section, footer {
+    width: 100vw;
+    text-align: center;
+}
+
+header h1 {
+    text-indent: -99999px;
+    background: url(../img/new-gif.gif) no-repeat center center;  
+    height: 125px;
+    width: 100vw;
+    margin: 0px auto;
+}
+
+header {
+    background-color: #FFCE00;
+}
+
+section {
+    height: calc(100vh - 125px);
+    background: url(../img/book.png) no-repeat center center;
+    background-size: cover;
+    -webkit-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+   -moz-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+     -o-transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); 
+        transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+}
+
+section.blur {
+    background: url(../img/book-bg-blur.png) no-repeat center center;
+    background-size: cover;
+}
+
+.explain {
+    padding-top: 15vh;
+    color: #FFCE00;
+    font-size: 42px;
+    line-height: 50px;
+    width: 55vw;
+    margin:auto;
+    text-transform: uppercase;
+    font-family: 'BebasNeue';
+}
+
+.explain b {
+    text-decoration: underline;
+}
+
+.input {
+    width: 70vw;
+    padding-top: 15vh;
+    margin:auto;
+    font-family: 'BebasNeue';
+}
+
+#inputText {
+    height: 75px;
+    font-size: 30px;
+    font-family: 'BebasNeue';
+    border-radius: 0px;
+    border:none;
+}
+
+.input span {
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #FFCE00;
+    border-radius: 0px;
+    border:none;
+}
+
+#secondScram {
+    display: none;
+}
+
+.scrambled {
+    padding-top: 15vh;
+    color: #FFCE00;
+    font-size: 42px;
+    line-height: 50px;
+    width: 100vw;
+    text-transform: uppercase;
+    font-family: 'BebasNeue';
+}
+
+.scrambled #scrambledText:before, .scrambled #scrambledText:after {
+    content: '"';
+}
+
+.scram-wrap {
+    height: 350px;
+    width: 700px;
+    margin:auto;
+    background: url(../img/book.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    -webkit-box-shadow: 0 0 60px rgba(0,0,0,1);
+    -moz-box-shadow: 0 0 60px rgba(0,0,0,1);
+    box-shadow: 0 0 60px rgba(0,0,0,1);
+
+}
+
+#logo {
+    position: absolute;
+    bottom:15px;
+    left:50%;
+    margin-left: -150px;
+}
+
+#scrambledText {
+    padding: 125px 10px 0px;
+    margin:0px;
+}
+#nameInput{
+    text-align: right;
+}
+#nameInput, #nameInput input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 26px;
+    font-family: garamond;
+    font-style: italic;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+    .scram-wrap {
+        height: 400px;
+        width: 800px;
+    }
+
+}
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    .scram-wrap {
+        height: 300px;
+        width: 600px;
+    }
+    #scrambledText {
+        padding: 100px 10px 0px;
+    }
+    #nameInput, #nameInput input {
+        font-size: 26px;
+    }
+    .scrambled {
+        font-size: 42px;
+        line-height: 50px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    .scram-wrap {
+        height: 225px;
+        width: 450px;
+    }
+    #scrambledText {
+        padding: 50px 10px 0px;
+    }
+    #nameInput, #nameInput input {
+        font-size: 22px;
+    }
+    .scrambled {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .scram-wrap {
+        height: 150px;
+        width: 300px;
+    }
+    #scrambledText {
+        padding: 5px 10px 0px;
+    }
+    #nameInput, #nameInput input {
+        font-size: 16px;
+    }
+    .scrambled {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
