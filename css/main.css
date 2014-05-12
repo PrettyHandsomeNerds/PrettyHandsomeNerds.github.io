@@ -269,6 +269,23 @@ section.blur {
         font-size: 26px;
         line-height: 35px;
     }
+    .explain {
+        font-size: 32px;
+        line-height: 40px;
+        width: 75vw;
+    }
+    .input {
+        width: 90vw;
+        padding: 15vh 0;
+    }
+    #inputText {
+        height: 75px;
+        font-size: 24px;
+    }
+    .input span {
+        font-size: 16px;
+        padding: 5px;
+    }
 }
 
 /* ==========================================================================
