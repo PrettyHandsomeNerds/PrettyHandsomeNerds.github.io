@@ -260,7 +260,11 @@ section.blur {
         background-size: 480px;
     }
     section {
+<<<<<<< HEAD
         min-height: 100vh;
+=======
+        height: calc(100vh - 75px);
+>>>>>>> css-updates
     }
     .scram-wrap {
         height: 200px;
