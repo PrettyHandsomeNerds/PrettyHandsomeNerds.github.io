@@ -23,7 +23,7 @@ $(document).on('click', '#share-button', function() {
         name: 'Word scrambler',
         caption: '-',
         description: '-',
-        link: '-',
+        link: 'http://prettyhandsomenerds.github.io/',
         picture: '-'
     } 
     fbShare(shareData);
