@@ -25,7 +25,7 @@ $('#scramble').on( "click", function() {
 });
 
 $('#inputName').on('keyup', function() {
-	var string = somethingClever($('#inputText').val()),
+	var string = $('#inputText').val(),
 		name = $('#inputName').val();
 
 	setUrlHash(string, name)
