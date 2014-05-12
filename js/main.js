@@ -24,7 +24,7 @@ $(document).on('click', '#share-button', function() {
         caption: '-',
         description: '-',
         link: 'http://prettyhandsomenerds.github.io/',
-        picture: '-'
+        picture: 'http://prettyhandsomenerds.github.io/img/book.png'
     } 
     fbShare(shareData);
 });
