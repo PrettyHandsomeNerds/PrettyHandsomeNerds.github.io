@@ -7,7 +7,9 @@ $('#scramble').on( "click", function() {
 		$('#secondScram').fadeIn(1000);
 	});
 
-
+	urlHash = encodeURI(string);
+	window.ph_string = urlHash;
+	window.location.hash = urlHash;	
 });
 
 $('#inputText').focus(function() {
@@ -20,10 +22,10 @@ $('#inputText').focus(function() {
 
 $(document).on('click', '#share-button', function() {
     var shareData = {
-        name: 'Word scrambler',
-        caption: '-',
-        description: '-',
-        link: 'http://prettyhandsomenerds.github.io/',
+        name: 'Pretty Handsome Scramble',
+        caption: '',
+        description: 'In the world of Pretty Handsome Nerds things are often upside down, but always make sense. That is why we created a Pretty Handsome Scramble - an ultimate tool for future communication that‚ we hope, will become a language one day. A Pretty Handsome Language, that is.',
+        link: window.ph_string,
         picture: 'http://prettyhandsomenerds.github.io/img/book.png'
     } 
     fbShare(shareData);
